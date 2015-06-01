@@ -19,25 +19,30 @@
   <body>
     <div class="container">
       <h1 class="page-header text-center">TEST</h1>
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8 col-md-offset-2">
         <form id="new_contact">
           <div class="form-group">
             <label for="first_name">First Name</label>
             <input type="text" id="first_name" class="form-control" required autofocus>
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" class="form-control" required autofocus>
+            <input type="text" id="last_name" class="form-control" required>
             <label for="phone_number">Phone Number</label>
-            <input type="text" id="phone_number" class="form-control" required autofocus>
+            <input type="text" id="phone_number" class="form-control" required>
+            <br>
             <div id="new_addresses">
               <div class="new_address">
-                <label for="street">Street Address</label>
-                <input type="text" id="street" class="form-control" required autofocus>
-                <label for="city">City </label>
-                <input type="text" id="city" class="form-control" required autofocus>
-                <label for="state">State</label>
-                <input type="text" id="state" class="form-control" required autofocus>
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" class="form-control" required autofocus>
+                <label for="street" class="sr-only">Street Address</label>
+                <input type="text" id="street" class="form-control" placeholder="Street Address" required>
+                <br>
+                <div class="form-inline">
+                  <label for="city" class="sr-only">City </label>
+                  <input type="text" id="city" class="form-control" placeholder="City" required>
+                  <label for="state" class="sr-only">State</label>
+                  <input type="text" id="state" class="form-control" placeholder="State" required>
+                  <label for="zip" class="sr-only">Zip</label>
+                  <input type="text" id="zip" class="form-control" placeholder="Zip Code" required>
+                </div>
+                <br>
               </div>
             </div>
           </div>
