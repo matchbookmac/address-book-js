@@ -5,17 +5,87 @@
 
 .contacts {
   display: none;
+  background-color: rgba(70,137,102,0.9);
+  padding: 0.5em 2em;
+  border-radius: 5px;
 }
 
 #show_contact {
   display: none;
+  background-color: rgba(70,137,102,0.9);
+  padding: 0.5em 2em;
+  border-radius: 5px;
 }
 
 .contact {
   cursor: pointer;
-  color: blue;
+  color: #FFB03B;
+  font-size: 3em;
+  vertical-align: bottom;
+}
+
+/*.contact::before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  content: '';
+  background: url('../img/contact.png') no-repeat 0 0;
+  background-size: 100%;
+}*/
+
+#contact_list li  {
+  list-style-image: url('../img/contact.png');
+}
+#show_contact, #addressess {
+  color: #8E2800;
+  font-size: 28px;
 }
 
 .contact:hover {
   text-decoration: underline;
+}
+
+body {
+  background-image: url("../img/note.jpg");
+  background-position: 35%;
+  color: #FFF0A5;
+  height: 100%;
+}
+
+.container {
+  background-color: rgba(70,137,102,0.6);
+  min-height: 100%;
+  width: 100%;
+  /*padding-left: 50px;
+  padding-right: 50px;*/
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.btn {
+  color: #FFF0A5;
+}
+
+.btn-danger {
+  background-color: #8E2800;
+  border-color: #8E2800;
+}
+
+.btn-warning {
+  background-color: #FFB03B;
+  border-color: #FFB03B;
+}
+
+.btn-primary {
+  background-color: #468966;
+  border-color: #468966;
+}
+
+.form-control {
+  background-color: #FFF0A5;
+  color: #B64926;
 }
