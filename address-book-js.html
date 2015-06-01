@@ -28,18 +28,21 @@
             <input type="text" id="last_name" class="form-control" required autofocus>
             <label for="phone_number">Phone Number</label>
             <input type="text" id="phone_number" class="form-control" required autofocus>
-            <div class="new_address">
-              <label for="street">Street Address</label>
-              <input type="text" id="street" class="form-control" required autofocus>
-              <label for="city">City </label>
-              <input type="text" id="city" class="form-control" required autofocus>
-              <label for="state">State</label>
-              <input type="text" id="state" class="form-control" required autofocus>
-              <label for="zip">Zip</label>
-              <input type="text" id="zip" class="form-control" required autofocus>
+            <div id="new_addresses">
+              <div class="new_address">
+                <label for="street">Street Address</label>
+                <input type="text" id="street" class="form-control" required autofocus>
+                <label for="city">City </label>
+                <input type="text" id="city" class="form-control" required autofocus>
+                <label for="state">State</label>
+                <input type="text" id="state" class="form-control" required autofocus>
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" class="form-control" required autofocus>
+              </div>
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Add</button>
+          <span class="btn btn-warning" id="add_address">Another Address </span>
         </form>
         <br>
         <div class="contacts">
