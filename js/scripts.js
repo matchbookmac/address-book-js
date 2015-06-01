@@ -4,7 +4,13 @@
 //jQuery
 $( document ).ready(function() {
   $("#add_address").click(function() {
-    $(".new_address").clone().appendTo("#new_addresses");
+    $(".new_address").first().clone().appendTo("#new_addresses");
+  });
+
+  $("#remove_address").click(function() {
+    if ($("#new_addresses").children().length > 1) {
+      $(".new_address").last().remove();
+    }
   });
 
   $("form#new_contact").submit(function(event) {
