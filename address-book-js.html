@@ -19,18 +19,43 @@
   <body>
     <div class="container">
       <h1 class="page-header text-center">TEST</h1>
-      <form id="new_contact">
-        <div class="form-group">
-          <label for="first_name"></label>
-          <input type="text" id="first_name" class="form-control" required autofocus>
-          <label for="last_name"></label>
-          <input type="text" id="last_name" class="form-control" required autofocus>
-          <label for="phone_number"></label>
-          <input type="text" id="phone_number" class="form-control" required autofocus>
+      <div class="col-md-6 col-md-offset-3">
+        <form id="new_contact">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" class="form-control" required autofocus>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" class="form-control" required autofocus>
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="phone_number" class="form-control" required autofocus>
+            <div class="new_address">
+              <label for="street">Street Address</label>
+              <input type="text" id="street" class="form-control" required autofocus>
+              <label for="city">City </label>
+              <input type="text" id="city" class="form-control" required autofocus>
+              <label for="state">State</label>
+              <input type="text" id="state" class="form-control" required autofocus>
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" class="form-control" required autofocus>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+        <br>
+        <div class="contacts">
+          <h2>Contacts:</h2>
+          <ul id="contact_list">
+
+          </ul>
         </div>
-      </form>
-      <div id='jqtest' class="text-center">
-        If you can read this, jQuery may not be working
+
+        <div id="show_contact">
+          <h2></h2>
+          <p class="lead">First Name: <span class="first_name"></span></p>
+          <p class="lead">Last Name: <span class="last_name"></span></p>
+          <p>Addresses:</p>
+          <ul id="addresses"></ul>
+        </div>
       </div>
     </div>
   </body>
